@@ -1,0 +1,54 @@
+// -----------文本按钮-----------
+
+.th-primary-btn.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-primary-color);
+  &:hover {
+    background: var(--th-primary-light-color);
+  }
+}
+
+.th-success-btn.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-success-color);
+  &:hover {
+    background: var(--th-success-light-color);
+  }
+}
+
+.th-info-btn.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-info-color);
+  &:hover {
+    background: var(--th-info-light-color);
+  }
+}
+.th-warning-btn.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-warning-color);
+  &:hover {
+    background: var(--th-warning-light-color);
+  }
+}
+
+.th-danger-btn.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-danger-color);
+  &:hover {
+    background: var(--th-danger-light-color);
+  }
+}
+
+.th-help-btn.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-help-color);
+  &:hover {
+    background: var(--th-help-light-color);
+  }
+}

@@ -1,0 +1,98 @@
+@use "@/style/base/inset.scss" as *;
+
+// ----------类型按钮-----------
+.th-primary-btn {
+  @include inset-btn;
+  font-size: var(--th-medium-font-size);
+  height: var(--th-medium-size);
+  padding: var(--th-medium-padding);
+  border-radius: var(--th-border-radius);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: bottom;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  color: #ffffff;
+  background-color: var(--th-primary-color);
+  border-color: var(--th-primary-color);
+  &:hover {
+    background-color: var(--th-primary-hover-color);
+    border-color: var(--th-primary-hover-color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--th-primary-shadow-color),
+      0 1px 2px 0 black;
+  }
+}
+
+.th-success-btn {
+  background: var(--th-success-color);
+  border-color: var(--th-success-color);
+  &:hover {
+    background-color: var(--th-success-hover-color);
+    border-color: var(--th-success-hover-color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--th-success-shadow-color),
+      0 1px 2px 0 black;
+  }
+}
+
+.th-info-btn {
+  background: var(--th-info-color);
+  border-color: var(--th-info-color);
+  &:hover {
+    background-color: var(--th-info-hover-color);
+    border-color: var(--th-info-hover-color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--th-info-shadow-color),
+      0 1px 2px 0 black;
+  }
+}
+
+.th-warning-btn {
+  background: var(--th-warning-color);
+  border-color: var(--th-warning-color);
+  &:hover {
+    background-color: var(--th-warning-hover-color);
+    border-color: var(--th-warning-hover-color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--th-warning-shadow-color),
+      0 1px 2px 0 black;
+  }
+}
+
+.th-danger-btn {
+  background: var(--th-danger-color);
+  border-color: var(--th-danger-color);
+  &:hover {
+    background-color: var(--th-danger-hover-color);
+    border-color: var(--th-danger-hover-color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--th-danger-shadow-color),
+      0 1px 2px 0 black;
+  }
+}
+
+.th-help-btn {
+  background: var(--th-help-color);
+  border-color: var(--th-help-color);
+  &:hover {
+    background-color: var(--th-help-hover-color);
+    border-color: var(--th-help-hover-color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--th-help-shadow-color),
+      0 1px 2px 0 black;
+  }
+}

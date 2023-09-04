@@ -1,0 +1,24 @@
+// -----------按钮大小 mini-----------
+.th-primary-btn.mini {
+  height: var(--th-mini-size);
+  font-size: var(--th-mini-font-size);
+  padding: var(--th-mini-padding);
+}
+
+.th-primary-btn.small {
+  height: var(--th-small-size);
+  font-size: var(--th-small-font-size);
+  padding: var(--th-small-padding);
+}
+
+.th-primary-btn.medium {
+  height: var(--th-medium-size);
+  font-size: var(--th-medium-font-size);
+  padding: var(--th-medium-padding);
+}
+
+.th-primary-btn.large {
+  height: var(--th-large-size);
+  font-size: var(--th-large-font-size);
+  padding: var(--th-large-padding);
+}

@@ -1,0 +1,10 @@
+@mixin inset-btn {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  font: initial;
+  cursor: pointer;
+  box-sizing: border-box;
+}

@@ -1,0 +1,29 @@
+:root {
+  --th-border-radius: 6px;
+
+  --th-mini-size: 22px;
+  --th-mini-font-size: 10px;
+  --th-mini-padding: 0 6px;
+
+  --th-small-size: 28px;
+  --th-small-font-size: 12px;
+  --th-small-padding: 0 10px;
+
+  --th-medium-size: 32px;
+  --th-medium-font-size: 14px;
+  --th-medium-padding: 0 14px;
+
+  --th-large-size: 40px;
+  --th-large-font-size: 15px;
+  --th-large-padding: 0 18px;
+
+  --th-mini-circle-size: var(--th-mini-size);
+  --th-small-circle-size: var(--th-small-size);
+  --th-medium-circle-size: var(--th-medium-size);
+  --th-large-circle-size: var(--th-large-size);
+
+  --th-mini-circle-font-size: var(--th-mini-font-size);
+  --th-small-circle-font-size: var(--th-small-font-size);
+  --th-medium-circle-font-size: var(--th-medium-font-size);
+  --th-large-circle-font-size: var(--th-large-font-size);
+}
