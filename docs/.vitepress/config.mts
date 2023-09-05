@@ -56,7 +56,10 @@ export default defineConfig({
       },
       {
         text: 'Components',
-        items: [{ text: 'Button', link: '/buttonDocx' }],
+        items: [
+          { text: 'Button', link: '/buttonDocx' },
+          { text: 'ButtonGroup', link: '/buttonGroupDocx' },
+        ],
       },
     ],
     docFooter: { prev: '上一篇', next: '下一篇' },
@@ -69,7 +72,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present fangzunbao'
-    }
+      copyright: 'Copyright © 2023-present fangzunbao',
+    },
   },
 })
