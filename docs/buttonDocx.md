@@ -314,6 +314,46 @@ import '../packages/style/index.scss'
 
 :::
 
+## 自定义颜色
+
+您可以自定义按钮的颜色。
+
+我们将自动计算按钮处于 hover 和 active 状态时的颜色。
+
+:::demo
+
+```vue
+<template>
+  <div class="button-wrapper">
+    <div class="button-item">
+      <th-button color="#e74c3c">点我</th-button>
+      <th-button color="#e74c3c" plain>点我</th-button>
+      <th-button color="#e74c3c" text>点我</th-button>
+      <th-button color="#e74c3c" link>点我</th-button>
+      <th-button color="#e74c3c" disabled>点我</th-button>
+      <th-button color="#e74c3c" loading>点我</th-button>
+    </div>
+  </div>
+</template>
+
+<style>
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+</style>
+```
+
+:::
+
 ## Button API
 
 ### Button Attributes
@@ -328,7 +368,10 @@ import '../packages/style/index.scss'
 | `text`    |              文字按钮              | -                                                         | `boolean` |  `false`  |
 | `link`    |              链接按钮              | -                                                         | `boolean` |  `false`  |
 | `loading` |              加载状态              | -                                                         | `boolean` |  `false`  |
+| `color`   |           自定义按钮颜色           | -                                                         | `string`  |     -     |
 
 ### Button Slots
 
-### Button Exposes
+| 插槽名    | 说明           |
+| --------- | -------------- |
+| `default` | 自定义默认内容 |
