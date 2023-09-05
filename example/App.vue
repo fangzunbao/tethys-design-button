@@ -146,6 +146,18 @@
         <th-button mimicry="concave">点我</th-button>
       </div>
     </fieldset>
+    <fieldset class="field-set">
+      <legend>按钮-自定义颜色</legend>
+      <div class="btn-item">
+        <th-button color="#e74c3c">点我</th-button>
+        <th-button color="#e74c3c" plain>点我</th-button>
+        <th-button color="#fdcb6e" plain>点我</th-button>
+        <th-button color="#e74c3c" text>点我</th-button>
+        <th-button color="#e74c3c" link>点我</th-button>
+        <th-button color="#e74c3c" disabled>点我</th-button>
+        <th-button color="#e74c3c" loading>点我</th-button>
+      </div>
+    </fieldset>
   </div>
 </template>
 
