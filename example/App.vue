@@ -158,6 +158,19 @@
         <th-button color="#e74c3c" loading>点我</th-button>
       </div>
     </fieldset>
+    <fieldset class="field-set">
+      <legend>按钮组</legend>
+      <div class="btn-item">
+        <th-button-group>
+          <th-button>点我</th-button>
+          <th-button type="success">点我</th-button>
+          <th-button type="info">点我</th-button>
+          <th-button type="warning">点我</th-button>
+          <th-button type="danger">点我</th-button>
+          <th-button type="help">点我</th-button>
+        </th-button-group>
+      </div>
+    </fieldset>
   </div>
 </template>
 

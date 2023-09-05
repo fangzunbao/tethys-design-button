@@ -10,6 +10,10 @@
     border-color: transparent;
     color: var(--th-primary-disable-color);
   }
+  &.plain {
+    background-color: transparent;
+    color: var(--th-primary-disable-color);
+  }
 }
 .th-success-btn.disabled {
   background-color: var(--th-success-disable-color);
@@ -18,6 +22,10 @@
   &.text {
     background-color: transparent;
     border-color: transparent;
+    color: var(--th-success-disable-color);
+  }
+  &.plain {
+    background-color: transparent;
     color: var(--th-success-disable-color);
   }
 }
@@ -30,6 +38,10 @@
     border-color: transparent;
     color: var(--th-info-disable-color);
   }
+  &.plain {
+    background-color: transparent;
+    color: var(--th-info-disable-color);
+  }
 }
 .th-warning-btn.disabled {
   background-color: var(--th-warning-disable-color);
@@ -38,6 +50,10 @@
   &.text {
     background-color: transparent;
     border-color: transparent;
+    color: var(--th-warning-disable-color);
+  }
+  &.plain {
+    background-color: transparent;
     color: var(--th-warning-disable-color);
   }
 }
@@ -50,6 +66,10 @@
     border-color: transparent;
     color: var(--th-danger-disable-color);
   }
+  &.plain {
+    background-color: transparent;
+    color: var(--th-danger-disable-color);
+  }
 }
 .th-help-btn.disabled {
   background-color: var(--th-help-disable-color);
@@ -58,6 +78,10 @@
   &.text {
     background-color: transparent;
     border-color: transparent;
+    color: var(--th-help-disable-color);
+  }
+  &.plain {
+    background-color: transparent;
     color: var(--th-help-disable-color);
   }
 }
