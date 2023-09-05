@@ -64,8 +64,8 @@ const props = defineProps({
 const btnType = computed(() => `th-${props.type}-btn`)
 
 const buttonClass = ref({
-  'th-primary-btn': true,
-  [btnType.value]: true,
+  hover: !props.disabled && !props.loading,
+  [btnType.value]: props.mimicry ? false : true,
   [props.shape]: true,
   [props.size]: true,
   [props.mimicry]: props.mimicry ? true : false,

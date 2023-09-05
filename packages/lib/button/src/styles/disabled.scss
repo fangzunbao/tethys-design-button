@@ -1,49 +1,63 @@
-.th-primary-btn.disabled {
+.disabled {
   cursor: not-allowed;
+}
+.th-primary-btn.disabled {
   background-color: var(--th-primary-disable-color);
   border-color: var(--th-primary-disable-color);
-  &:hover {
-    background-color: var(--th-primary-disable-color);
-    border-color: var(--th-primary-disable-color);
+  &.link,
+  &.text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--th-primary-disable-color);
   }
 }
 .th-success-btn.disabled {
   background-color: var(--th-success-disable-color);
   border-color: var(--th-success-disable-color);
-  &:hover {
-    background-color: var(--th-success-disable-color);
-    border-color: var(--th-success-disable-color);
+  &.link,
+  &.text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--th-success-disable-color);
   }
 }
 .th-info-btn.disabled {
   background-color: var(--th-info-disable-color);
   border-color: var(--th-info-disable-color);
-  &:hover {
-    background-color: var(--th-info-disable-color);
-    border-color: var(--th-info-disable-color);
+  &.link,
+  &.text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--th-info-disable-color);
   }
 }
 .th-warning-btn.disabled {
   background-color: var(--th-warning-disable-color);
   border-color: var(--th-warning-disable-color);
-  &:hover {
-    background-color: var(--th-warning-disable-color);
-    border-color: var(--th-warning-disable-color);
+  &.link,
+  &.text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--th-warning-disable-color);
   }
 }
 .th-danger-btn.disabled {
   background-color: var(--th-danger-disable-color);
   border-color: var(--th-danger-disable-color);
-  &:hover {
-    background-color: var(--th-danger-disable-color);
-    border-color: var(--th-danger-disable-color);
+  &.link,
+  &.text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--th-danger-disable-color);
   }
 }
 .th-help-btn.disabled {
   background-color: var(--th-help-disable-color);
   border-color: var(--th-help-disable-color);
-  &:hover {
-    background-color: var(--th-help-disable-color);
-    border-color: var(--th-help-disable-color);
+  &.link,
+  &.text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--th-help-disable-color);
   }
 }

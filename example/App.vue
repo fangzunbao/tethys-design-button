@@ -40,6 +40,7 @@
             <th-button size="small" type="success" shape="circle">
               点我
             </th-button>
+            <th-button type="warning" shape="circle">点我</th-button>
             <th-button size="large" type="info" shape="circle">点我</th-button>
           </div>
         </fieldset>
@@ -110,6 +111,22 @@
         <th-button type="danger" disabled>点我</th-button>
         <th-button type="help" disabled>点我</th-button>
       </div>
+      <div class="btn-item">
+        <th-button text disabled>点我</th-button>
+        <th-button type="success" text disabled>点我</th-button>
+        <th-button type="info" text disabled>点我</th-button>
+        <th-button type="warning" text disabled>点我</th-button>
+        <th-button type="danger" text disabled>点我</th-button>
+        <th-button type="help" text disabled>点我</th-button>
+      </div>
+      <div class="btn-item">
+        <th-button link disabled>点我</th-button>
+        <th-button type="success" link disabled>点我</th-button>
+        <th-button type="info" link disabled>点我</th-button>
+        <th-button type="warning" link disabled>点我</th-button>
+        <th-button type="danger" link disabled>点我</th-button>
+        <th-button type="help" link disabled>点我</th-button>
+      </div>
     </fieldset>
     <fieldset class="field-set">
       <legend>按钮-加载</legend>
@@ -143,9 +160,10 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 24px;
   overflow: auto;
   gap: 10px;
