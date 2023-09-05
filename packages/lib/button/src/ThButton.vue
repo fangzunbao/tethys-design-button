@@ -107,7 +107,7 @@ const buttonClass = ref({
   </button>
 </template>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 @use './styles/type.scss' as *;
 @use './styles/plain.scss' as *;
 @use './styles/text.scss' as *;

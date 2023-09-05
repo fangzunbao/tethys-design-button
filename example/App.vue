@@ -170,6 +170,16 @@
           <th-button type="help">点我</th-button>
         </th-button-group>
       </div>
+      <div class="btn-item">
+        <th-button-group size="large">
+          <th-button>点我</th-button>
+          <th-button type="success" disabled>点我</th-button>
+          <th-button type="info">点我</th-button>
+          <th-button type="warning">点我</th-button>
+          <th-button type="danger">点我</th-button>
+          <th-button type="help">点我</th-button>
+        </th-button-group>
+      </div>
     </fieldset>
   </div>
 </template>

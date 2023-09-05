@@ -3,14 +3,14 @@ export default { name: 'ThButtonGroup' }
 </script>
 
 <script setup lang="ts">
-import { nextTick } from 'vue'
+// import { nextTick } from 'vue'
 
 const directionOptions: { [name: string]: string } = {
   horizontal: 'row',
   vertical: 'column',
 }
 
-const props = defineProps({
+defineProps({
   direction: {
     type: String,
     default: () => 'horizontal',
@@ -22,21 +22,31 @@ const props = defineProps({
     type: [String, Number],
     default: () => 0 || '0px',
   },
-  disabled: {
-    type: Boolean,
+  size: {
+    type: String,
+    default: () => 'medium',
+    validator: (value: string) => {
+      return ['mini', 'small', 'medium', 'large'].includes(value)
+    },
   },
+  // disabled: {
+  //   type: Boolean,
+  // },
 })
 
-nextTick(() => {
-  if (props.disabled) {
-    const btns = document.getElementsByTagName('button')
-    for (let i = 0; i < btns.length; i++) {
-      btns[i].classList.add('disabled')
-      btns[i].classList.remove('hover')
-      btns[i].disabled = true
-    }
-  }
-})
+// nextTick(() => {
+//   if (props.disabled) {
+//     const btns = document.getElementsByTagName('button')
+//     for (let i = 0; i < btns.length; i++) {
+//       btns[i].classList.add('disabled')
+//       btns[i].classList.remove('hover')
+//       btns[i].disabled = true
+//     }
+//   }
+//   const btns = document.querySelector('.th-button-group')
+
+//   console.log(btns)
+// })
 </script>
 
 <template>
@@ -62,7 +72,7 @@ nextTick(() => {
   </div>
 </template>
 
-<style scope lang="scss">
+<style lang="scss">
 .th-button-group {
   .horizontal-button-group {
     display: flex;
