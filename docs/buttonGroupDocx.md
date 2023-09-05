@@ -73,52 +73,6 @@ import '../packages/style/index.scss'
 
 :::
 
-## 按钮禁用
-
-使用 `disabled` 属性来设置整个按钮组的禁用，也可以单独设置每个按钮的禁用状态。
-
-:::demo
-
-```vue
-<template>
-  <div class="button-wrapper">
-    <div class="button-item">
-      <th-button-group>
-        <th-button>Primary</th-button>
-        <th-button type="success">Success</th-button>
-        <th-button type="info">Info</th-button>
-        <th-button type="warning">Warning</th-button>
-        <th-button type="danger">Danger</th-button>
-        <th-button type="help">Help</th-button>
-      </th-button-group>
-    </div>
-    <div class="button-item">
-      <th-button-group>
-        <th-button type="success">Success</th-button>
-        <th-button type="success" disabled>Success</th-button>
-      </th-button-group>
-    </div>
-  </div>
-</template>
-
-<style>
-.button-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
-
-.button-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-</style>
-```
-
-:::
-
 ## ButtonGroup API
 
 ### ButtonGroup Attributes
@@ -127,7 +81,6 @@ import '../packages/style/index.scss'
 | --------- | :--------------------------------: | ------------------------ | :-------------: | :----------: |
 | direction |            按钮组的方向            | `horizontal`、`vertical` |    `string`     | `horizontal` |
 | gutter    |            按钮组的间隔            | -                        | `string/number` |     `0`      |
-| disabled  |            按钮组的禁用            | -                        |    `boolean`    |   `false`    |
 
 ### ButtonGroup Slots
 
