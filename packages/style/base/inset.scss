@@ -4,7 +4,24 @@
   outline: none;
   border: none;
   background: transparent;
-  font: initial;
+  // font: initial;
   cursor: pointer;
   box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: bottom;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  color: #ffffff;
+  font-size: var(--th-medium-font-size);
+  height: var(--th-medium-size);
+  padding: var(--th-medium-padding);
+  border-radius: var(--th-border-radius);
 }

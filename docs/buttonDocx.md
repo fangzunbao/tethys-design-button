@@ -252,6 +252,68 @@ import '../packages/style/index.scss'
 
 :::
 
+## 按钮禁用
+
+使用 disabled 使按钮变为禁用状态。
+
+:::demo
+
+```vue
+<template>
+  <div class="button-wrapper">
+    <span class="item-text">普通按钮-禁用</span>
+    <div class="button-item">
+      <th-button disabled>Primary</th-button>
+      <th-button type="success" disabled>success</th-button>
+      <th-button type="info" disabled>info</th-button>
+      <th-button type="warning" disabled>warning</th-button>
+      <th-button type="danger" disabled>danger</th-button>
+      <th-button type="help" disabled>help</th-button>
+    </div>
+    <span class="item-text">文本按钮-禁用</span>
+    <div class="button-item">
+      <th-button text disabled>Primary</th-button>
+      <th-button type="success" text disabled>success</th-button>
+      <th-button type="info" text disabled>info</th-button>
+      <th-button type="warning" text disabled>warning</th-button>
+      <th-button type="danger" text disabled>danger</th-button>
+      <th-button type="help" text disabled>help</th-button>
+    </div>
+    <span class="item-text">链接按钮-禁用</span>
+    <div class="button-item">
+      <th-button link disabled>Primary</th-button>
+      <th-button type="success" link disabled>success</th-button>
+      <th-button type="info" link disabled>info</th-button>
+      <th-button type="warning" link disabled>warning</th-button>
+      <th-button type="danger" link disabled>danger</th-button>
+      <th-button type="help" link disabled>help</th-button>
+    </div>
+  </div>
+</template>
+
+<style>
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+</style>
+```
+
+:::
+
 ## Button API
 
 ### Button Attributes

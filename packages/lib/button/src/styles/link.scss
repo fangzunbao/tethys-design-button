@@ -1,20 +1,39 @@
 // -----------链接按钮-----------
-
-.th-primary-btn.link {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--th-primary-color);
+.link.hover {
   &:hover {
+    background-color: transparent;
+    border-color: transparent;
     .th-btn-label {
       position: relative;
       &::after {
         position: absolute;
         left: 0;
         bottom: -2px;
-        content: "";
+        content: '';
         width: 100%;
         height: 2px;
-        background-color: var(--th-primary-color);
+      }
+    }
+  }
+}
+
+.th-primary-btn.link {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--th-primary-color);
+  &.hover {
+    &:hover {
+      .th-btn-label {
+        position: relative;
+        &::after {
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: var(--th-primary-color);
+        }
       }
     }
   }
@@ -24,10 +43,12 @@
   background-color: transparent;
   border-color: transparent;
   color: var(--th-success-color);
-  &:hover {
-    .th-btn-label {
-      &::after {
-        background-color: var(--th-success-color);
+  &.hover {
+    &:hover {
+      .th-btn-label {
+        &::after {
+          background-color: var(--th-success-color);
+        }
       }
     }
   }
@@ -37,10 +58,12 @@
   background-color: transparent;
   border-color: transparent;
   color: var(--th-info-color);
-  &:hover {
-    .th-btn-label {
-      &::after {
-        background-color: var(--th-info-color);
+  &.hover {
+    &:hover {
+      .th-btn-label {
+        &::after {
+          background-color: var(--th-success-color);
+        }
       }
     }
   }
@@ -49,10 +72,12 @@
   background-color: transparent;
   border-color: transparent;
   color: var(--th-warning-color);
-  &:hover {
-    .th-btn-label {
-      &::after {
-        background-color: var(--th-warning-color);
+  &.hover {
+    &:hover {
+      .th-btn-label {
+        &::after {
+          background-color: var(--th-warning-color);
+        }
       }
     }
   }
@@ -62,10 +87,12 @@
   background-color: transparent;
   border-color: transparent;
   color: var(--th-danger-color);
-  &:hover {
-    .th-btn-label {
-      &::after {
-        background-color: var(--th-danger-color);
+  &.hover {
+    &:hover {
+      .th-btn-label {
+        &::after {
+          background-color: var(--th-danger-color);
+        }
       }
     }
   }
@@ -75,10 +102,12 @@
   background-color: transparent;
   border-color: transparent;
   color: var(--th-help-color);
-  &:hover {
-    .th-btn-label {
-      &::after {
-        background-color: var(--th-help-color);
+  &.hover {
+    &:hover {
+      .th-btn-label {
+        &::after {
+          background-color: var(--th-help-color);
+        }
       }
     }
   }

@@ -1,35 +1,35 @@
 // -----------按钮圆角-----------
 
-.th-primary-btn.round {
+.round {
   border-radius: 2rem;
 }
 
 // -----------按钮圆形-----------
-.th-primary-btn.circle {
+.circle {
   display: inline-block;
   padding: 0 !important;
   border-radius: 50%;
 }
 
-.th-primary-btn.circle.mini {
+.circle.mini {
   width: var(--th-mini-circle-size);
   height: var(--th-mini-circle-size);
   font-size: var(--th-mini-circle-font-size);
 }
 
-.th-primary-btn.circle.small {
+.circle.small {
   width: var(--th-small-circle-size);
   height: var(--th-small-circle-size);
   font-size: var(--th-small-circle-font-size);
 }
 
-.th-primary-btn.circle.medium {
+.circle.medium {
   width: var(--th-medium-circle-size);
   height: var(--th-medium-circle-size);
   font-size: var(--th-medium-circle-font-size);
 }
 
-.th-primary-btn.circle.large {
+.circle.large {
   width: var(--th-large-circle-size);
   height: var(--th-large-circle-size);
   font-size: var(--th-large-circle-font-size);
