@@ -1,8 +1,9 @@
-import type { App } from 'vue'
-import ThButton from './src/index.vue'
+// import type { App } from 'vue'
+// import ThButton from './src/ThButton.vue'
+// import ThButtongroup from './src/ThButtonGroup.vue'
 
-export default {
-  install(app: App) {
-    app.component(ThButton.name, ThButton)
-  },
-}
+// export default {
+//   install(app: App) {
+//     app.component(ThButton.name, ThButton)
+//   },
+// }
