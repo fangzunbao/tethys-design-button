@@ -59,6 +59,7 @@ export default defineConfig({
         items: [
           { text: 'Button', link: '/buttonDocx' },
           { text: 'ButtonGroup', link: '/buttonGroupDocx' },
+          { text: 'ButtonAnimate', link: '/buttonAnimateDocx' },
         ],
       },
     ],
