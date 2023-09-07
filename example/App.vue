@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <fieldset class="field-set">
+    <!-- <fieldset class="field-set">
       <legend>按钮类型</legend>
       <div class="btn-item">
         <th-button>点我</th-button>
@@ -180,7 +180,11 @@
           <th-button type="help">点我</th-button>
         </th-button-group>
       </div>
-    </fieldset>
+    </fieldset> -->
+
+    <th-animate-button color="#d63031" :width="200" height="120">
+      点我
+    </th-animate-button>
   </div>
 </template>
 
