@@ -38,6 +38,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
