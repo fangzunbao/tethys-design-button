@@ -57,9 +57,10 @@ export default defineConfig({
       {
         text: 'Components',
         items: [
-          { text: 'Button', link: '/buttonDocx' },
-          { text: 'ButtonGroup', link: '/buttonGroupDocx' },
-          { text: 'ButtonAnimate', link: '/buttonAnimateDocx' },
+          { text: 'Button 普通按钮', link: '/buttonDocx' },
+          { text: 'ButtonGroup 按钮组', link: '/buttonGroupDocx' },
+          { text: 'ButtonAnimate 动画按钮', link: '/buttonAnimateDocx' },
+          { text: 'FloatButton 悬浮按钮', link: '/floatButtonDocx' },
         ],
       },
     ],
