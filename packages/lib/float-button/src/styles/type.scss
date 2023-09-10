@@ -1,0 +1,29 @@
+.default{
+  background-color: var(--th-float-btn-default-color);
+  &:hover {
+    background-color: var(--th-float-btn-default-hover-color);
+  }
+  .th-float-btn-detault-icon{
+    &::before {
+      background-color: rgba(0, 0, 0, 0.88);
+    }
+    &::after {
+      background-color: rgba(0, 0, 0, 0.88);
+    }
+  }
+}
+
+.primary{
+  background-color: var(--th-float-btn-primary-color);
+  &:hover {
+    background-color: var(--th-float-btn-primary-hover-color);
+  }
+  .th-float-btn-detault-icon {
+    &::before {
+      background-color: #ffffff;
+    }
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}
