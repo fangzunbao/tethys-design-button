@@ -50,7 +50,7 @@ const floatBtnClassName = ref({
 // 自定义样式
 const floatbtnStyle = ref({
   'border-radius': props.shape === 'round' ? '50%' : '6px',
-  ['position']: props.position ? 'fixed' : 'static',
+  ['position']: props.position ? 'absolute' : 'static',
 })
 
 const toggerFloatButton = () => {
