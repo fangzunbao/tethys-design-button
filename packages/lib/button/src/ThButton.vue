@@ -42,6 +42,9 @@ const props = defineProps({
       return ['', 'convex', 'concave'].includes(value)
     },
   },
+  icon: {
+    type: Object,
+  },
   plain: {
     type: Boolean,
   },
@@ -101,7 +104,10 @@ const buttonClass = ref({
     <span class="th-btn-loading" v-if="loading">
       <img src="./assets/loading.svg" alt="loading" style="width: 16px" />
     </span>
-    <span class="th-btn-label">
+    <span v-if="icon">
+      <component :is="icon" style="width: 16px; height: 16px" />
+    </span>
+    <span class="th-btn-label" v-if="!icon">
       <slot></slot>
     </span>
   </button>

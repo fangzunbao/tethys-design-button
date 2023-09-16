@@ -199,16 +199,21 @@
       </template>
     </th-float-button>  -->
 
-    <th-float-button-group type="primary" position="bottom-right">
+    <!-- <th-float-button-group type="primary" position="bottom-right">
       <th-float-button type="primary" shape="square" />
       <th-float-button type="primary" shape="square" />
-      <!-- <template #icon>
+      <template #icon>
         <SwitchButton />
-      </template> -->
-      <!-- <th-float-button type="primary" shape="square" />
+      </template>
+      <th-float-button type="primary" shape="square" />
       <th-float-button shape="square" />
-      <th-float-button shape="square" /> -->
-    </th-float-button-group>
+      <th-float-button shape="square" />
+    </th-float-button-group> -->
+
+    <!-- <th-button type="success" :icon="SwitchButton" />
+    <th-button type="success" :icon="SwitchButton" plain/>
+    <th-button type="success" :icon="SwitchButton" shape="round"/>
+    <th-button type="primary" :icon="SwitchButton" shape="circle"/> -->
   </div>
 </template>
 
@@ -218,7 +223,7 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { SwitchButton } from '@element-plus/icons-vue'
+import { SwitchButton, Plus } from '@element-plus/icons-vue'
 </script>
 <style scoped lang="scss">
 .container {
