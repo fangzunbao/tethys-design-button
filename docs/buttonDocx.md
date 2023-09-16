@@ -43,8 +43,30 @@ import '../packages/style/index.scss'
       <th-button type="danger" plain>danger</th-button>
       <th-button type="help" plain>help</th-button>
     </div>
+    <div class="button-item">
+      <th-button :icon="SwitchButton" />
+      <th-button type="success" :icon="Plus" />
+      <th-button type="info" :icon="SwitchButton" />
+      <th-button type="warning" :icon="Edit" />
+      <th-button type="danger" :icon="Delete" />
+      <th-button type="help" :icon="Setting" />
+    </div>
+    <div class="button-item">
+      <th-button :icon="SwitchButton" plain />
+      <th-button type="success" :icon="Plus" shape="round" />
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import {
+  SwitchButton,
+  Plus,
+  Delete,
+  Edit,
+  Setting,
+} from '@element-plus/icons-vue'
+</script>
 
 <style>
 .button-wrapper {
@@ -363,6 +385,7 @@ import '../packages/style/index.scss'
 | `type`    |                类型                | `primary`、`success`、`info`、`warning`、`danger`、`help` | `string`  | `primary` |
 | `shape`   |                形状                | `square`、`round`、`circle`                               | `string`  | `square`  |
 | `size`    |                尺寸                | `mini`、`small`、`medium`、`large`                        | `string`  | `medium`  |
+| `icon`    |                图标                | -                                                         | `string`  |     -     |
 | `mimicry` |               拟态化               | `convex`、`concave`                                       | `string`  |     -     |
 | `plain`   |                镂空                | -                                                         | `boolean` |  `false`  |
 | `text`    |              文字按钮              | -                                                         | `boolean` |  `false`  |
