@@ -7,7 +7,7 @@ import { ref } from 'vue'
 const props = defineProps({
   type: {
     type: String,
-    default: () => '',
+    default: () => 'delete',
     validator: (val: string) =>
       ['plus', 'update', 'delete', 'refresh', 'search'].includes(val),
   },
