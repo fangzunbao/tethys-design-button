@@ -189,16 +189,26 @@
     <!-- <th-submit-button color="#d63031" :width="200" height="120">
       Click Me
     </th-submit-button> -->
-    <th-operate-button type="refresh" color="#78e08f" hover-color="#f6b93b" />
+    <!-- <th-operate-button type="refresh" color="#78e08f" hover-color="#f6b93b" /> -->
 
-    <!-- <th-float-button position="bottom-right" shape="square">悬浮按钮</th-float-button> -->
+    <!-- <th-float-button position="bottom-right" type="primary" shape="square" />
 
-    <!-- <th-float-button-group type="primary" position="bottom-right">
+    <th-float-button shape="square">
+      <template #icon>
+        <Edit />
+      </template>
+    </th-float-button>  -->
+
+    <th-float-button-group type="primary" position="bottom-right">
       <th-float-button type="primary" shape="square" />
       <th-float-button type="primary" shape="square" />
+      <!-- <template #icon>
+        <SwitchButton />
+      </template> -->
+      <!-- <th-float-button type="primary" shape="square" />
       <th-float-button shape="square" />
-      <th-float-button shape="square" />
-    </th-float-button-group> -->
+      <th-float-button shape="square" /> -->
+    </th-float-button-group>
   </div>
 </template>
 
@@ -207,7 +217,9 @@ export default {
   name: 'App',
 }
 </script>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { SwitchButton } from '@element-plus/icons-vue'
+</script>
 <style scoped lang="scss">
 .container {
   width: 100%;

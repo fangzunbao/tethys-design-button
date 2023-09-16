@@ -2,99 +2,72 @@
 export default { name: 'ThFloatButtonGroup' }
 </script>
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
+import { Close } from '@element-plus/icons-vue'
 
-const floatButtonGroupRef = ref()
+const open = ref(false)
 
-const props = defineProps({
-  position: {
-    type: String,
-    defailt: () => '',
-    validator: (value: string) =>
-      [
-        '',
-        'top-left',
-        'top-center',
-        'top-right',
-        'center-left',
-        'center',
-        'center-right',
-        'bottom-left',
-        'bottom-center',
-        'bottom-right',
-      ].includes(value),
-  },
+defineProps({
   type: {
     type: String,
     default: () => 'default',
     validator: (value: string) => ['primary', 'default'].includes(value),
   },
 })
-
-// const type = computed((): string => props.type || 'default')
-// const position = computed((): string => props.position || '')
-
-// 自定义类名
-// const floatBtnClassName = ref({
-//   'th-float-button-group': true,
-//   [type.value]: true,
-//   [position.value]: true,
-// })
-
-const toggleFloatBtngGroup = () => {
-  floatButtonGroupRef.value.classList.toggle('active')
-}
 </script>
 
 <template>
-  <div class="th-float-button-group">
-    <div
-      ref="floatButtonGroupRef"
-      class="th-float-button-group__body"
-      @click="toggleFloatBtngGroup"
-    >
-      <div class="th-float-button-group-icon"></div>
-      <div class="th-float-button-group-slot">
+  <div class="th-float-btn-group">
+    <Transition name="float">
+      <div v-show="open" class="float-group-wrap">
         <slot></slot>
       </div>
-    </div>
+    </Transition>
+    <th-float-button :open="open" :type="type" @click="open = !open">
+      <template #icon>
+        <Close v-if="open" />
+        <slot name="icon" v-else></slot>
+      </template>
+    </th-float-button>
   </div>
 </template>
 <style scoped lang="scss">
-// @use './styles/position.scss' as *;
-// @use './styles/type.scss' as *;
-
-.th-float-button-group {
-  position: fixed;
-  bottom: 20px;
+.th-float-btn-group {
+  position: absolute;
   right: 20px;
-  .th-float-button-group__body {
-    position: relative;
-    .th-float-button-group-icon {
-      width: 40px;
-      height: 40px;
-      background-color: red;
-      cursor: pointer;
-    }
-    .th-float-button-group-slot {
-      position: absolute;
-      left: 0;
-      top: -120px;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      background-color: #fff;
-      transition: all 0.2s;
-      transform-origin: 50% 100%;
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 20px;
-    }
+  bottom: 20px;
+  z-index: 999;
+  .float-group-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: -1;
+    margin: 10px 0;
   }
-  .active {
-    .th-float-button-group-slot {
-      height: 100px;
-    }
-  }
+}
+
+.float-enter-from {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.float-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float-enter-active,
+.float-leave-active {
+  transition: all 0.6s;
+}
+
+.float-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
 }
 </style>
