@@ -1,8 +1,8 @@
 import type { App } from 'vue'
-import ThAnimateButton from './src/index.vue'
+import ThParticleButton from './src/ThParticleButton.vue'
 
 export default {
   install(app: App) {
-    app.component(ThAnimateButton.name, ThAnimateButton)
+    app.component(ThParticleButton.name, ThParticleButton)
   },
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-export default { name: 'ThAnimateButton' }
+export default { name: 'ThParticleButton' }
 </script>
 <script setup lang="ts">
 import { ref } from 'vue'
