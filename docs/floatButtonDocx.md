@@ -81,3 +81,9 @@ import '../packages/style/index.scss'
 | `type`     |           悬浮按钮的类型           | `default`、`primary`                                                                                                              | `string` | `default` |
 | `position` |           悬浮按钮的位置           | `top-left`、`top-center`、`top-right`、`center-left`、`center`、`center-right`、`bottom-left`、`bottom-center`、`bottom-right'`、 | `string` |     -     |
 | `shape`    |           悬浮按钮的形状           | `square`、`round`                                                                                                                 | `string` |  `round`  |
+
+### FloatButton Slots
+
+| 插槽名    | 说明           |
+| --------- | -------------- |
+| `default` | 自定义默认内容 |
