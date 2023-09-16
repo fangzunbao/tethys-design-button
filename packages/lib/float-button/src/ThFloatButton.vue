@@ -3,6 +3,7 @@ export default { name: 'ThFloatButton' }
 </script>
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { Setting, Close } from '@element-plus/icons-vue'
 
 const floatButtonRef = ref()
 
@@ -34,6 +35,10 @@ const props = defineProps({
     default: () => 'default',
     validator: (value: string) => ['primary', 'default'].includes(value),
   },
+  open: {
+    type: Boolean,
+    default: () => false,
+  },
 })
 
 const position = computed((): string => props.position || '')
@@ -47,12 +52,6 @@ const floatBtnClassName = ref({
   [props.shape]: true,
 })
 
-// 自定义样式
-const floatbtnStyle = ref({
-  'border-radius': props.shape === 'round' ? '50%' : '6px',
-  ['position']: props.position ? 'absolute' : 'static',
-})
-
 const toggerFloatButton = () => {
   floatButtonRef.value.classList.toggle('active')
 }
@@ -62,10 +61,20 @@ const toggerFloatButton = () => {
   <div
     ref="floatButtonRef"
     :class="floatBtnClassName"
-    :style="floatbtnStyle"
+    :style="`position: ${
+      props.position ? 'absolute' : 'static'
+    }; border-radius: ${props.shape === 'round' ? '50%' : '6px'}`"
     @click="toggerFloatButton"
   >
-    <div class="th-float-btn-detault-icon"></div>
+    <div
+      class="th-float-btn-icon"
+      :style="`color: ${type === 'default' ? '#000000' : '#ffffff'}`"
+    >
+      <slot name="icon">
+        <Close v-if="open" />
+        <Setting v-else />
+      </slot>
+    </div>
   </div>
 </template>
 
@@ -79,42 +88,18 @@ body {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.2s;
   box-shadow:
     0 6px 16px 0 rgba(0, 0, 0, 0.08),
     0 3px 6px -4px rgba(0, 0, 0, 0.12),
     0 9px 28px 8px rgba(0, 0, 0, 0.05);
-  .th-float-btn-detault-icon {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.2s;
-    &::before {
-      display: inline-block;
-      content: '';
-      width: 20px;
-      height: 2px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &::after {
-      display: inline-block;
-      content: '';
-      width: 2px;
-      height: 20px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
 
-.active {
-  .th-float-btn-detault-icon {
-    transform: rotate(45deg);
+  .th-float-btn-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 </style>
